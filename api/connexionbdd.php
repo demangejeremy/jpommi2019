@@ -5,12 +5,12 @@ $host    = "localhost";
         $pass    = "root";
         $db_name = "jpommi";
 
-        //create connection
+        // Mise en place de la connexion
         $connection = mysqli_connect($host, $user, $pass, $db_name);
 
-        //test if connection failed
+        // En cas d'erreur de connexion
         if(mysqli_connect_errno()){
-            die("connection failed: "
+            die("Erreur de connexion : "
                 . mysqli_connect_error()
                 . " (" . mysqli_connect_errno()
                 . ")");
